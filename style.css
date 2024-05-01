@@ -1,0 +1,166 @@
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: rgb(111, 203, 226) ;
+    }
+    .grid-prod img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    body {
+        background-color: rgb(209, 168, 248);
+    } 
+    .grid-prod img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: rgb(255, 224, 215);
+    } 
+    .grid-prod img {
+        width: 100%;
+    }
+}
+
+    h1 {
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    header nav{
+        text-align: right;
+        text-decoration: none;
+    }
+
+    header {
+        background-color: rgb(107, 107, 107);
+    }
+
+    footer {
+        background-color: rgb(107, 107, 107);
+        text-align: center;
+    }
+
+    .grid-datos {
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: rgb(231, 206, 206);
+        display: flex;
+        justify-content: center;
+    }
+
+    #redesycontacto {
+        text-align:center ;
+        background-color: rgb(231, 206, 206);
+    }
+
+    h2 {
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    #datoscont {
+        text-align: center;
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        background-color: rgb(231, 206, 206);
+    }
+
+    .textoinfo {
+        text-align: justify;
+        color:rgb(226, 111, 111) ;
+    }
+
+    nav li {
+        margin-right: 40px;  
+    }
+
+    .novedades {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .fotonovedad {
+        margin: 40px;
+        border: 5px dotted rgb(243, 95, 95);
+    }
+
+    .grid-datos {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .text1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        margin: 40px;
+    }
+    .text2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        margin: 40px;
+    }
+
+    .text3 { 
+        grid-area: 1 / 3 / 2 / 4; 
+        margin: 40px;
+    }
+
+    .enlaces:visited {
+        color: rgb(255, 172, 172);
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-prod {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+
+    .prodfotos {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .imgprod {
+        display: flex;
+        flex-wrap: wrap;
+    }
