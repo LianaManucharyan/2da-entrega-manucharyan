@@ -57,13 +57,17 @@
         background-color: rgb(231, 206, 206);
     }
 
-    h2 {
-        font-size: 40px;
-        font-family: "Bebas Neue", sans-serif;
+    .contenedor__redes {
+        text-align: center;
     }
 
-    #datoscont {
-        text-align: center;
+    .contenedor__redes__text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+
+    .contenedor__redes__title {
+        font-family: "Bebas Neue", sans-serif;
     }
 
     li{
@@ -96,7 +100,7 @@
         margin: 40px;
     }
 
-    .fotonovedad {
+    .novedad__photo {
         margin: 40px;
         border: 5px dotted rgb(243, 95, 95);
     }
@@ -133,34 +137,28 @@
         height: 100%;
     }
 
-    .grid-prod {
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-content: center;
-        flex-flow: row wrap;
+        grid-gap: 10px;
     }
 
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 1 / 3 / 2; }
-    .div4 { grid-area: 2 / 2 / 3 / 3; }
-    .div5 { grid-area: 3 / 1 / 4 / 2; }
-    .div6 { grid-area: 3 / 2 / 4 / 3; }
-
-    .prodfotos {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-flow: row wrap;
+    .productos__photo {
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
     }
 
     h3 {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    .imgprod {
-        display: flex;
-        flex-wrap: wrap;
+    .contacto__title {
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+    }
+
+    .contacto__contact {
+        text-align: center;
+        font-size: 15px;
     }
