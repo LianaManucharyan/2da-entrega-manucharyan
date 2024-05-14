@@ -1,0 +1,30 @@
+.grid-datos {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: $grid-datos-color;   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.text1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin: 40px;
+}
+.text2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin: 40px;
+}
+
+.text3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    margin: 40px;
+}

@@ -1,0 +1,96 @@
+ul {
+    list-style: none;
+
+    li {
+        margin-right: 40px;
+        display: inline-block;
+    
+        a {
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+    }
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: $size-titulo-principal;
+}
+
+h3 {
+    font-family: $titulo-tercero;
+}
+
+#redesycontacto {
+    text-align:center ;
+    background-color: $redesycontacto-color;
+}
+
+.contenedor {
+    &__redes{
+        text-align: center;
+
+        &__text {
+        font-family: $contenedor-redes-text;
+        font-size: 15px;
+        }
+
+        &__title {
+        font-family: $contenedor-redes-title;  
+        }
+    }
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: $form-color;
+}
+
+.textoinfo {
+    text-align: justify;
+    color: $textinfo-color;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px;
+
+    &__photo {
+        margin: 40px;
+        border: 5px dotted rgb(243, 95, 95);
+    }
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.productos {
+
+    &__photo {
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $contenedor-redes-text;
+        text-align: center;
+    }
+
+    &__contact {
+        text-align: center;
+        font-size: 15px;
+    }
+}
