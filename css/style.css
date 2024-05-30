@@ -197,3 +197,10 @@
         font-display: grid;
         justify-content: space-evenly;
     }
+
+    .fotologo {
+        display: flex;
+        justify-content: center;
+    }
+
+    

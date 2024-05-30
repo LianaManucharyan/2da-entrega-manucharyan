@@ -1,20 +1,65 @@
 //titulos
-$titulo-principal: "Bebas Neue", sans-serif; 
-$contenedor-redes-text: Verdana, Geneva, Tahoma, sans-serif;
-$contenedor-redes-title: "Bebas Neue", sans-serif;
-$titulo-tercero: Georgia, 'Times New Roman', Times, serif;
-$contacto-title: "Bebas Neue", sans-serif;
+$titulo-principal: Major Mono Display; 
+$titulo-secundario: Major Mono Display;
+$titulo-tercero: Montserrat;
+$titulo-form: Montserrat;
+$card-title: Montserrat;
+$card-text: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$contact-a: Montserrat;
+$footer-a: Montserrat;
+$navbar-brand-font: Major Mono Display;
+$nav-link-font: Montserrat;
+$p-font: Arial, Helvetica, sans-serif;
+
 
 //tamaños
 $size-titulo-principal: 30px; 
+$margin-right-ul-li: 40px;
+$font-size-a: 16px;
+$form-width: 400px;
+$form-padding: 2em;
+$form-border-radius: 3em;
+$textoinfo-margin: 40px;
+$textoinfo-border-radius: 10px;
+$nosotros-info-margin: 40px;
+$nosotros-info-border-radius: 10px;
+$img-size: 100%;
+$productos-padding: 20px;
+$masvendido-padding: 20px;
+$masvendido-margin: 15px;
+$producto-padding: 20px;
+$producto-h3-size: 1.2em;
+$producto-h3-margin: 20px;
+$contenedor-padding: 20px;
+$contenedor-margin: 20px;
+$contacto-ul-margin-top: 20px;
+$contacto-ul-margin-butttom: 30px;
+$footer-margin-top: 10px;
+$footer-padding: 10px;
+$logo-margin-left: -5px;
+$mediaq-contenedor-prod: 40px;
+$grid-datos-font-size: 20px;
+$grid-datos-margin: 20px;
+$grid-container-gap: 10px;
+$grid-container-text-margin: 40px;
+$contenedor-prod-gap: 20px;
+$producto-padding: 20px;
+$container-fluid-padding: 25px; 
+$navbar-brand-size: 35px; 
+
 
 //colores
-$mediaq-color1: #6fcbe2;
-$mediaq-color2: #d1a8f8;
-$mediaq-color3: #ffe0d7;
-$footer-color: #6b6b6b;
-$grid-datos-color: #e7cece;
-$redesycontacto-color: #e7cece;
-$form-color: #e7cece;
-$textinfo-color: #e26f6f;
-$enlace-color: #ffacac;
+$titulo-terciario-color: #684e4e;
+$form-background-color: #ffffff;
+$text-info-color: #000000;
+$nosotros-info-color: #000000;
+$productos-background-color: #ccc;
+$contact-a-color: #000000;
+$footer-background-color: #684e4e;
+$logo-color: #ffffff;
+$footer-a-color: #ffffff;
+$enlace-color: #684e4e;
+$textinfo-envios-li-color: #ad3d3d;
+$container-fluid-background-color: #ffffff;
+$navbar-brand-color: #684e4e;
+$nav-link-color: #000000;

@@ -1,13 +1,18 @@
+.fotologo {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     list-style: none;
 
     li {
-        margin-right: 40px;
+        margin-right: $margin-right-ul-li;
         display: inline-block;
     
         a {
             text-decoration: none;
-            font-size: 16px;
+            font-size: $font-size-a;
         }
 
     }
@@ -25,9 +30,15 @@ ul {
 h1 {
     font-family: $titulo-principal;
     font-size: $size-titulo-principal;
+    text-align: center;
+}
+
+h2 {
+    font-family: $titulo-secundario;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
+    text-align: center;
 }
 
 @keyframes un_efecto {
@@ -55,79 +66,118 @@ h1 {
     justify-content: space-evenly;
 }
 
+p {
+    font-family: $p-font;
+}
+
 h3 {
     font-family: $titulo-tercero;
-}
-
-#redesycontacto {
-    text-align:center ;
-    background-color: $redesycontacto-color;
-}
-
-.contenedor {
-    &__redes{
-        text-align: center;
-
-        &__text {
-        font-family: $contenedor-redes-text;
-        font-size: 15px;
-        }
-
-        &__title {
-        font-family: $contenedor-redes-title;  
-        }
-    }
+    color: $titulo-terciario-color;
 }
 
 form {
     margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    background-color: $form-color;
+    width: $form-width;
+    padding: $form-padding;
+    border: 3px solid #684e4e;
+    border-radius: $form-border-radius;
+    background-color: white;
+
+    .titulo-form {
+        font-family: $titulo-form;
+    }
 }
 
 .textoinfo {
     text-align: justify;
-    color: $textinfo-color;
+    color: $text-info-color;
+    margin: $textoinfo-margin;
+    border: 2px solid #684e4e;
+    border-radius: $textoinfo-border-radius;
 }
 
-.novedades {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 40px;
+.textinfo-envios ul {
+    list-style: circle;
+}
 
-    &__photo {
-        margin: 40px;
-        border: 5px dotted rgb(243, 95, 95);
-    }
+.nosotros-info {
+    text-align: justify;
+    color: $nosotros-info-color;
+    margin: $nosotros-info-margin;
+    border: 2px solid #684e4e;
+    border-radius: $nosotros-info-border-radius;
 }
 
 .img {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: $img-size;
+    height: $img-size;
 }
 
-.productos {
+.masvendido {
+    padding: $masvendido-padding;
 
-    &__photo {
-        background-color: #ccc;
-        padding: 20px;
-        text-align: center;
+    &.card-group {
+        margin: $masvendido-margin;
+
+        &.card {
+            text-align: center;
+        }
     }
 
-    &__title {
-        font-family: $contenedor-redes-text;
-        text-align: center;
+}
+
+.card-body {
+                
+    &.card-title {
+        font-family: $card-title;
     }
 
-    &__contact {
-        text-align: center;
-        font-size: 15px;
+    &.card-text{
+        font-family: $card-text;
     }
+}
+
+.producto {
+    flex: 0 1 calc(33.333% - 20px); 
+    border: 1px solid #ccc;
+    padding: $producto-padding;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.producto h3 {
+    font-size: $producto-h3-size;
+    margin: $producto-h3-margin;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $contenedor-padding;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title{
+       text-align: center;
+
+        &__contact ul{
+            text-align: center;
+            margin-top: $contacto-ul-margin-top;
+            margin-bottom: $contacto-ul-margin-butttom;
+        }
+
+        &__contact a{ 
+            font-family: $contact-a;
+            color: $contact-a-color;
+        }
+    }
+
+
 }

@@ -1,21 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", sans-serif;
-} 
+  font-family: Major Mono Display;
+}
 
 .enlaces:visited {
-  color: #ffacac;
+  color: #684e4e;
 }
 
 * {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Major Mono Display;
   padding: 0;
   margin: 9;
 }
 
 * {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Major Mono Display;
   padding: 0;
   margin: 9;
 }
@@ -28,7 +28,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 20px;
-  background-color: #e7cece;
+  margin: 20px;
 }
 
 .grid-container {
@@ -52,9 +52,41 @@
   margin: 40px;
 }
 
-header nav {
+.contenedor-prod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.producto {
+  border: 4px solid #684e4e;
+  padding: 20px;
+  text-align: center;
+}
+
+header .container-fluid {
   text-align: right;
   text-decoration: none;
+  background-color: #ffffff;
+  padding: 25px;
+}
+header .navbar-brand {
+  font-size: 35px;
+  color: #684e4e;
+  font-family: Major Mono Display;
+}
+header .navbar-nav {
+  text-align: right;
+}
+header .nav-link {
+  color: #000000;
+  font-family: Montserrat;
+}
+
+.fotologo {
+  display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -78,11 +110,17 @@ ul li a {
   }
 }
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Major Mono Display;
   font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: Major Mono Display;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
+  text-align: center;
 }
 
 @keyframes un_efecto {
@@ -110,50 +148,45 @@ h1 {
   justify-content: space-evenly;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#redesycontacto {
-  text-align: center;
-  background-color: #e7cece;
-}
-
-.contenedor__redes {
-  text-align: center;
-}
-.contenedor__redes__text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-}
-.contenedor__redes__title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Montserrat;
+  color: #684e4e;
 }
 
 form {
   margin: 0 auto;
   width: 400px;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  background-color: #e7cece;
+  padding: 2em;
+  border: 3px solid #684e4e;
+  border-radius: 3em;
+  background-color: white;
+}
+form .titulo-form {
+  font-family: Montserrat;
 }
 
 .textoinfo {
   text-align: justify;
-  color: #e26f6f;
+  color: #000000;
+  margin: 40px;
+  border: 2px solid #684e4e;
+  border-radius: 10px;
 }
 
-.novedades {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 40px;
+.textinfo-envios ul {
+  list-style: circle;
 }
-.novedades__photo {
+
+.nosotros-info {
+  text-align: justify;
+  color: #000000;
   margin: 40px;
-  border: 5px dotted rgb(243, 95, 95);
+  border: 2px solid #684e4e;
+  border-radius: 10px;
 }
 
 .img {
@@ -163,47 +196,123 @@ form {
   height: 100%;
 }
 
-.productos__photo {
-  background-color: #ccc;
+.masvendido {
   padding: 20px;
+}
+.masvendido.card-group {
+  margin: 15px;
+}
+.masvendido.card-group.card {
   text-align: center;
 }
-.productos__title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.card-body.card-title {
+  font-family: Montserrat;
+}
+.card-body.card-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.producto {
+  flex: 0 1 calc(33.333% - 20px);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
-.productos__contact {
+
+.producto h3 {
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 15px;
+  padding: 20px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contacto__title {
+  text-align: center;
+}
+.contacto__title__contact ul {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contacto__title__contact a {
+  font-family: Montserrat;
+  color: #000000;
 }
 
 footer {
-  background-color: #6b6b6b;
-  text-align: center;
+  background-color: #684e4e;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+footer .contenedor__logo {
+  align-items: center;
+  justify-content: center;
+  margin-left: -5px;
+  color: #ffffff;
+}
+footer .contenedor__sitios__ubi {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+footer .contenedor__sitios__ubi__a {
+  font-family: Montserrat;
+  color: #ffffff;
+}
+footer .contenedor__redes__ubi {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+footer .contenedor__redes__ubi__a {
+  font-family: Montserrat;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: #6fcbe2;
+  .grid-datos {
+    display: flex;
+    flex-direction: column;
   }
-  .grid-prod img {
-    width: 100%;
+  .contenedor-prod {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
-  body {
-    background-color: #d1a8f8;
+  .grid-datos {
+    display: flex;
+    flex-direction: column;
   }
-  .grid-prod img {
-    width: 100%;
+  .contenedor-prod {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
   }
 }
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #ffe0d7;
-  }
-  .grid-prod img {
-    width: 100%;
+  .textinfo-envios li {
+    color: #ad3d3d;
   }
 }
 

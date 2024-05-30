@@ -1,7 +1,24 @@
 header {
 
-    nav {
+    .container-fluid {
         text-align: right;
         text-decoration: none;
+        background-color: $container-fluid-background-color;
+        padding: $container-fluid-padding;
+    }
+
+    .navbar-brand {
+        font-size: $navbar-brand-size;
+        color: $navbar-brand-color;
+        font-family: $navbar-brand-font;
+    }
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .nav-link {
+        color: $nav-link-color;
+        font-family: $nav-link-font; 
     }
 }
