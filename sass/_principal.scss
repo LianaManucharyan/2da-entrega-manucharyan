@@ -75,6 +75,11 @@ h3 {
     color: $titulo-terciario-color;
 }
 
+h5 {
+    font-family: $titulo-quinto;
+    font-size: $titulo-quinto-size; 
+}
+
 form {
     margin: 0 auto;
     width: $form-width;

@@ -157,6 +157,11 @@ h3 {
   color: #684e4e;
 }
 
+h5 {
+  font-family: Major Mono Display;
+  font-size: 30px;
+}
+
 form {
   margin: 0 auto;
   width: 300px;
@@ -348,10 +353,6 @@ footer .contenedor__redes__ubi__a {
   }
   .textinfo-envios li {
     color: #ad3d3d;
-  }
-  .footer .contenedor {
-    display: flex;
-    flex-direction: column;
   }
 }
 
