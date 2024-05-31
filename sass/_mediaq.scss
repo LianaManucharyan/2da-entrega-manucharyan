@@ -1,4 +1,10 @@
 @media only screen and (max-width: 500px) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
     .grid-datos {
         display: flex;
         flex-direction: column;
@@ -9,9 +15,31 @@
         flex-direction: column;
         margin: $mediaq-contenedor-prod;
     }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .footer {
+        .contenedor {
+           display: flex;
+        flex-direction: column; 
+        }
+    }
+
 } 
 
 @media only screen and (min-width: 501px) and (max-width: 960px) {
+    
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
     .grid-datos {
         display: flex;
         flex-direction: column;
@@ -22,10 +50,39 @@
         flex-direction: column;
         margin: $mediaq-contenedor-prod;
     }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .footer {
+        .contenedor {
+           display: flex;
+        flex-direction: column; 
+        }
+    }
+
 }
 
 @media only screen and (min-width: 961px) {
+    
+    .body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
     .textinfo-envios li {
         color: $textinfo-envios-li-color;
+    }
+
+    .footer {
+        .contenedor {
+           display: flex;
+        flex-direction: column; 
+        }
     }
 }

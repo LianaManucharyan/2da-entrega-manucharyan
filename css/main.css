@@ -159,11 +159,12 @@ h3 {
 
 form {
   margin: 0 auto;
-  width: 400px;
-  padding: 2em;
+  width: 300px;
+  padding: 1em;
   border: 3px solid #684e4e;
   border-radius: 3em;
   background-color: white;
+  box-sizing: border-box;
 }
 form .titulo-form {
   font-family: Montserrat;
@@ -260,8 +261,8 @@ footer .contenedor {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px;
-  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 footer .contenedor__logo {
   align-items: center;
@@ -289,6 +290,10 @@ footer .contenedor__redes__ubi__a {
 }
 
 @media only screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
   .grid-datos {
     display: flex;
     flex-direction: column;
@@ -297,9 +302,24 @@ footer .contenedor__redes__ubi__a {
     display: flex;
     flex-direction: column;
     margin: 40px;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .footer .contenedor {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
   .grid-datos {
     display: flex;
     flex-direction: column;
@@ -309,10 +329,29 @@ footer .contenedor__redes__ubi__a {
     flex-direction: column;
     margin: 40px;
   }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .footer .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 961px) {
+  .body {
+    margin: 0;
+    overflow-x: hidden;
+  }
   .textinfo-envios li {
     color: #ad3d3d;
+  }
+  .footer .contenedor {
+    display: flex;
+    flex-direction: column;
   }
 }
 

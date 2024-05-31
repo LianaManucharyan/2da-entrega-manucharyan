@@ -82,6 +82,7 @@ form {
     border: 3px solid #684e4e;
     border-radius: $form-border-radius;
     background-color: white;
+    box-sizing: border-box;
 
     .titulo-form {
         font-family: $titulo-form;
