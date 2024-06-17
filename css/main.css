@@ -369,6 +369,7 @@ footer .contenedor__redes__ubi__a {
   .bienvenidatienda {
     display: flex;
     flex-direction: column;
+    margin: 100px;
   }
   .textoinfo {
     margin: 50px;
@@ -410,6 +411,11 @@ footer .contenedor__redes__ubi__a {
   }
   .nosotros-img .image-container {
     margin: 20px;
+  }
+  .bienvenidatienda {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
   }
 }
 @media only screen and (min-width: 961px) {

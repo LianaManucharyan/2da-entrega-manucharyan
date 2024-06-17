@@ -20,8 +20,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 5px;
-        padding: 5px;
+        margin: $contenedor-padding-margin-mediaq;
+        padding: $contenedor-padding-margin-mediaq;
     }
 
     .footer {
@@ -43,17 +43,18 @@
         text-align: center;
 
         .image-container{
-            margin: 20px;
+            margin: $image-container-margin;
         }
     }
 
     .bienvenidatienda {
         display: flex;
         flex-direction: column;
+        margin: $bienvenidatienda-margin-mediaq;
     }
 
     .textoinfo {
-        margin: 50px;
+        margin: $textoinfo-margin-mediaq;
     }
 
 } 
@@ -92,7 +93,7 @@
     }
 
     .textoinfo {
-        margin: 50px;
+        margin: $textoinfo-margin-mediaq;
     }
 
     .nosotros-img {
@@ -102,8 +103,13 @@
         text-align: center;
 
         .image-container{
-            margin: 20px;
+            margin: $image-container-margin;
         }
+    }
+    .bienvenidatienda {
+        display: flex;
+        flex-direction: column;
+        margin: $bienvenidatienda-margin-mediaq;
     }
 }
 
