@@ -261,9 +261,9 @@ form .titulo-form {
 }
 
 .bienvenidatienda {
+  margin: 150px;
   display: flex;
   flex-direction: row;
-  margin: 150px;
 }
 
 .texto-contacto {
@@ -358,6 +358,10 @@ footer .contenedor__redes__ubi__a {
     flex-direction: column;
   }
   .nosotros-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .bienvenidatienda {
     display: flex;
     flex-direction: column;
   }

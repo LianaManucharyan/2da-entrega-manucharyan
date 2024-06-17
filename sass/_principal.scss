@@ -197,9 +197,9 @@ form {
 
 
 .bienvenidatienda {
+    margin: $titulo-bienvenidatienda-margin;
     display: flex;
     flex-direction: row;
-    margin: $titulo-bienvenidatienda-margin;
 }
 
 .texto-contacto {
@@ -230,3 +230,4 @@ form {
         }
     }
 }
+
