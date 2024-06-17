@@ -100,10 +100,11 @@ form {
     margin: $textoinfo-margin;
     border: 2px solid #684e4e;
     border-radius: $textoinfo-border-radius;
-}
 
-.textinfo-envios ul {
-    list-style: circle;
+    ul li {
+        list-style: circle;
+    }
+
 }
 
 .nosotros-info {
@@ -129,16 +130,18 @@ form {
 
         &.card {
             text-align: center;
+
+            &.card-body {
+            
+                &.card-text{
+                    font-family: $card-text;
+                }
+            }
         }
     }
-
 }
 
 .card-body {
-                
-    &.card-title {
-        font-family: $card-title;
-    }
 
     &.card-text{
         font-family: $card-text;
@@ -165,25 +168,65 @@ form {
     padding: $contenedor-padding;
 }
 
-.contacto {
+.datoscontact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    margin: $datoscontact-margin;
 
-    &__title{
-       text-align: center;
+    .contacto {
 
-        &__contact ul{
+        &__title{
             text-align: center;
-            margin-top: $contacto-ul-margin-top;
-            margin-bottom: $contacto-ul-margin-butttom;
+            margin: $datoscontact-title-margin;
+
+            &__contact ul{
+                text-align: center;
+                margin-top: $contacto-ul-margin-top;
+                margin-bottom: $contacto-ul-margin-butttom;
+            }
+
+            &__contact a{ 
+                font-family: $contact-a;
+                color: $contact-a-color;
+            }
         }
 
-        &__contact a{ 
-            font-family: $contact-a;
-            color: $contact-a-color;
-        }
+    }
+}
+
+
+.bienvenidatienda {
+    display: flex;
+    flex-direction: row;
+    margin: $titulo-bienvenidatienda-margin;
+}
+
+.texto-contacto {
+    justify-content: center;
+    
+    p {
+        margin-top: $margin-top-texto-contacto;
+        margin-left: $margin-left-right-texto-contacto;
+        margin-right: $margin-left-right-texto-contacto;
+        text-align: center;
+        border: 2px solid #684e4e;
+        border-radius: $textoinfo-border-radius;
     }
 
+}
 
+.nosotros-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .image-container {
+        margin-top: $nosotros-img-margin-top;
+        margin: $nosotros-img-margin;
+
+        img {
+            border: 2px solid #684e4e;
+        }
+    }
 }

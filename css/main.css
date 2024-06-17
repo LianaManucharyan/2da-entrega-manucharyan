@@ -29,6 +29,8 @@
   text-decoration: none;
   font-size: 20px;
   margin: 20px;
+  transform: translate(0px, 10px);
+  background-image: linear-gradient(to top, #684e4e, white);
 }
 
 .grid-container {
@@ -149,7 +151,7 @@ h2 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat;
 }
 
 h3 {
@@ -178,19 +180,18 @@ form .titulo-form {
 .textoinfo {
   text-align: justify;
   color: #000000;
-  margin: 40px;
+  margin: 100px;
   border: 2px solid #684e4e;
   border-radius: 10px;
 }
-
-.textinfo-envios ul {
+.textoinfo ul li {
   list-style: circle;
 }
 
 .nosotros-info {
   text-align: justify;
   color: #000000;
-  margin: 40px;
+  margin: 100px;
   border: 2px solid #684e4e;
   border-radius: 10px;
 }
@@ -211,10 +212,10 @@ form .titulo-form {
 .masvendido.card-group.card {
   text-align: center;
 }
-
-.card-body.card-title {
-  font-family: Montserrat;
+.masvendido.card-group.card.card-body.card-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .card-body.card-text {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -239,22 +240,55 @@ form .titulo-form {
   padding: 20px;
 }
 
-.contacto {
+.datoscontact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  margin: 40px;
 }
-.contacto__title {
+.datoscontact .contacto__title {
   text-align: center;
+  margin: 25px;
 }
-.contacto__title__contact ul {
+.datoscontact .contacto__title__contact ul {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.contacto__title__contact a {
+.datoscontact .contacto__title__contact a {
   font-family: Montserrat;
   color: #000000;
+}
+
+.bienvenidatienda {
+  display: flex;
+  flex-direction: row;
+  margin: 150px;
+}
+
+.texto-contacto {
+  justify-content: center;
+}
+.texto-contacto p {
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  border: 2px solid #684e4e;
+  border-radius: 10px;
+}
+
+.nosotros-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nosotros-img .image-container {
+  margin-top: 20px;
+  margin: 30px;
+}
+.nosotros-img .image-container img {
+  border: 2px solid #684e4e;
 }
 
 footer {
@@ -316,6 +350,14 @@ footer .contenedor__redes__ubi__a {
     padding: 5px;
   }
   .footer .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .datoscontact {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros-img {
     display: flex;
     flex-direction: column;
   }

@@ -22,7 +22,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Joyería Ian</a>
+          <a class="navbar-brand" href="../index.html">Joyería Ian</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,6 +49,14 @@
       </nav>
   </header>
 <!-- final del header -->
+
+<!-- comienzo del main -->
+  <main class="texto-contacto">
+    <h1>Formas de Contacto</h1>
+    <p>Nos encantaría escuchar tus preguntas, comentarios o cualquier inquietud que puedas tener. Por favor, utiliza el formulario a continuación o cualquiera de nuestros canales de contacto para comunicarte con nosotros. Estamos aquí para ayudarte.</p>
+  </main>
+<!-- final del main -->
+
 <!-- comienzo del section -->
   <section class="datoscontact">
     <div class="contacto">
@@ -72,44 +80,49 @@
   </section>
 <!-- final del section -->
 <!-- comienzo del form -->
-  <h2>Consultas</h2>
-  <form action="/submit" method="post">
-    <div class="form-group">
-      <div class="titulo-form">
-        <label for="nombre">Nombre:</label>
+  <section class="formulario">
+    <div class="texto-contacto">
+      <h2>Consultas</h2>
+      <p>Rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    </div>
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <div class="titulo-form">
+          <label for="nombre">Nombre:</label>
+        </div>
+          <input type="text" id="nombre" name="nombre" required>
       </div>
-        <input type="text" id="nombre" name="nombre" required>
-    </div>
-    <div class="form-group">
-      <div class="titulo-form">
-        <label for="email">Correo Electrónico:</label>
+      <div class="form-group">
+        <div class="titulo-form">
+          <label for="email">Correo Electrónico:</label>
+        </div>
+          <input type="email" id="email" name="email" required>
       </div>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <div class="titulo-form">
-        <label for="telefono">Teléfono:</label>
+      <div class="form-group">
+        <div class="titulo-form">
+          <label for="telefono">Teléfono:</label>
+        </div>
+          <input type="tel" id="telefono" name="telefono">
       </div>
-        <input type="tel" id="telefono" name="telefono">
-    </div>
-    <div class="form-group">
-      <div class="titulo-form">
-        <label for="mensaje">Mensaje:</label>
+      <div class="form-group">
+        <div class="titulo-form">
+          <label for="mensaje">Mensaje:</label>
+        </div>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
       </div>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    </div>
-    <div class="form-group">
-        <label>
-            <input type="checkbox" name="terminosycond" value="yes">
-            Acepta términos y condiciones
-        </label>
-    </div>
-    <button type="submit">Enviar</button>
-  </form>
+      <div class="form-group">
+          <label>
+              <input type="checkbox" name="terminosycond" value="yes">
+              Acepta términos y condiciones
+          </label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 <!-- final del form -->
 <!-- comienzo del footer -->
   <footer class="footer">
-    <div class="contenedor">
+    <section class="contenedor">
         <!-- Logo y textos footer -->
         <div class="contenedor__logo">
             <h5>Joyería Ian</h5>
@@ -142,7 +155,7 @@
             </li>
         </ul>
         <!-- Fin de Sección Redes footer -->
-    </div>
+    </section>
   </footer>
 <!-- final del footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
