@@ -360,10 +360,18 @@ footer .contenedor__redes__ubi__a {
   .nosotros-img {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros-img .image-container {
+    margin: 20px;
   }
   .bienvenidatienda {
     display: flex;
     flex-direction: column;
+  }
+  .textoinfo {
+    margin: 50px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
@@ -390,6 +398,18 @@ footer .contenedor__redes__ubi__a {
   .footer .contenedor {
     display: flex;
     flex-direction: column;
+  }
+  .textoinfo {
+    margin: 50px;
+  }
+  .nosotros-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros-img .image-container {
+    margin: 20px;
   }
 }
 @media only screen and (min-width: 961px) {

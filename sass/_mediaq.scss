@@ -39,11 +39,21 @@
     .nosotros-img {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .image-container{
+            margin: 20px;
+        }
     }
 
     .bienvenidatienda {
         display: flex;
         flex-direction: column;
+    }
+
+    .textoinfo {
+        margin: 50px;
     }
 
 } 
@@ -78,6 +88,21 @@
         .contenedor {
            display: flex;
         flex-direction: column; 
+        }
+    }
+
+    .textoinfo {
+        margin: 50px;
+    }
+
+    .nosotros-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .image-container{
+            margin: 20px;
         }
     }
 }
