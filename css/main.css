@@ -266,10 +266,10 @@ form .titulo-form {
   flex-direction: row;
 }
 
-.texto-contacto {
+main {
   justify-content: center;
 }
-.texto-contacto p {
+main p {
   margin-top: 30px;
   margin-left: 150px;
   margin-right: 150px;
@@ -328,6 +328,104 @@ footer .contenedor__redes__ubi__a {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 100px) and (max-width: 499px) {
+  .grid-datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-datos .text1 p {
+    font-size: 20px;
+  }
+  .grid-datos .text2 p {
+    font-size: 20px;
+  }
+  .grid-datos .text3 p {
+    font-size: 20px;
+  }
+  .bienvenidatienda {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bienvenidatienda .bienvenidatienda-texto h1 {
+    font-size: 20px;
+  }
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .contenedor__logo h5 {
+    font-size: 15px;
+  }
+  .container-fluid .navbar-brand {
+    font-size: 15px;
+  }
+  .contenedor-prod .producto img {
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+  }
+  main h1 {
+    font-size: 15px;
+  }
+  .textoinfo {
+    border: none;
+  }
+  .textoinfo h2 {
+    font-size: 15px;
+  }
+  .textoinfo ul {
+    font-size: 10px;
+  }
+  .textoinfo li {
+    font-size: 10px;
+  }
+  .textoinfo ol {
+    font-size: 10px;
+  }
+  .nosotros-info {
+    border: none;
+    margin: 30px;
+  }
+  .image-container img {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+  }
+  main p {
+    border: none;
+    margin: 20px;
+  }
+  .contacto__title {
+    font-size: 15px;
+  }
+  .contacto__title .contacto__title__contact ul li a {
+    font-size: 10px;
+  }
+  .texto-contacto h2 {
+    font-size: 15px;
+  }
+  .texto-contacto p {
+    text-align: center;
+    margin: 20px;
+  }
+  form {
+    width: 200px;
+  }
+  form .form-group .titulo-form label {
+    font-size: 10px;
+  }
+  form .form-group .small-input {
+    width: 150px;
+    padding: 4px;
+    border: 1px solid #ccc;
+  }
+  form .form-group .textarea {
+    width: 150px;
+    padding: 4px;
+    border: 1px solid #ccc;
+  }
+}
 @media only screen and (max-width: 500px) {
   body {
     margin: 0;
@@ -417,6 +515,24 @@ footer .contenedor__redes__ubi__a {
     flex-direction: column;
     margin: 100px;
   }
+  .texto-contacto {
+    justify-content: center;
+  }
+  .texto-contacto p {
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border: 2px solid #684e4e;
+    border-radius: 10px;
+  }
+  .nosotros-info {
+    border: none;
+    margin: 10px;
+  }
+  .nosotros-info p {
+    border: none;
+  }
 }
 @media only screen and (min-width: 961px) {
   .body {
@@ -425,6 +541,21 @@ footer .contenedor__redes__ubi__a {
   }
   .textinfo-envios li {
     color: #ad3d3d;
+  }
+  .nosotros-info p {
+    border: none;
+    text-align: justify;
+  }
+  .texto-contacto {
+    justify-content: center;
+  }
+  .texto-contacto p {
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border: 2px solid #684e4e;
+    border-radius: 10px;
   }
 }
 

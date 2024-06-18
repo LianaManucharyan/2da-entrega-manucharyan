@@ -1,3 +1,138 @@
+@media only screen and (min-width: 100px) and (max-width: 499px) {
+    .grid-datos {
+        display: flex;
+        flex-direction: column;
+
+        .text1{
+            p {
+                font-size: $mediaq-p-size;
+            }
+        }
+        .text2{
+            p {
+                font-size: $mediaq-p-size;
+            }
+        }
+        .text3{
+            p {
+                font-size: $mediaq-p-size;
+            }
+        }
+    }
+    .bienvenidatienda {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        .bienvenidatienda-texto{
+            h1 {
+                font-size: $mediaq-p-size;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        overflow: hidden;
+        .contenedor__logo{
+            h5{
+                font-size: $mediaq-h5-size;
+            }
+        }
+    }
+    .container-fluid{
+        .navbar-brand{
+           font-size: $mediaq-navbar-size;
+        }
+    }
+    .contenedor-prod{
+        .producto{
+            img{
+                width: $mediaq-img-size;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+    }
+    main{
+        h1{
+            font-size: $mediaq-h1-size;
+        }
+    }
+    .textoinfo{
+        border: none;
+        h2{
+            font-size: $mediaq-h2-size;
+        }
+        ul{
+            font-size: $mediaq-ul-li-ol-size;
+        }
+        li{
+            font-size: $mediaq-ul-li-ol-size;
+        }
+        ol{
+            font-size: $mediaq-ul-li-ol-size;
+        }
+    }
+    .nosotros-info{
+        border: none;
+        margin: $mediaq-nosotrosinfo-margin;
+    }
+    .image-container{
+        img{
+            width: $mediaq-img-size-container;
+            height: auto;
+            overflow: hidden; 
+        }
+    }
+    main{
+        p{
+            border: none;
+            margin: $mediaq-main-p-size;
+        }
+    }
+    .contacto__title{
+        font-size: $mediaq-contacto-size;
+        .contacto__title__contact{
+            ul{
+                li{
+                    a{
+                        font-size: $mediaq-contacto-font-size;
+                    } 
+                }
+            }
+        }
+    }
+    .texto-contacto{
+        h2{
+            font-size: $mediaq-h2-size;
+        }
+        p{
+            text-align: center;
+            margin: $mediaq-p-size;
+        }
+    }
+    form{
+        width: 200px;
+        .form-group{
+            .titulo-form{
+                label{
+                    font-size: $mediaq-form-label;
+                }
+            }
+            .small-input{
+                width: $mediaq-form-input;
+                padding: $mediaq-form-input-padding;
+                border: 1px solid #ccc;
+            }
+            .textarea{
+                width: $mediaq-textarea-size;
+                padding: $mediaq-textarea-padding;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    
+}
+
 @media only screen and (max-width: 500px) {
 
     body {
@@ -111,6 +246,24 @@
         flex-direction: column;
         margin: $bienvenidatienda-margin-mediaq;
     }
+    .texto-contacto{
+        justify-content: center;
+        p{
+            margin-top: $margin-top-texto-contacto;
+            margin-left: $margin-left-right-texto-contacto;
+            margin-right: $margin-left-right-texto-contacto;
+            text-align: center;
+            border: 2px solid #684e4e;
+            border-radius: $textoinfo-border-radius;
+        }
+    }
+    .nosotros-info{
+        border: none;
+        margin: $mediaq-nosotros-info-margin;
+        p{
+            border: none;
+        }
+    }
 }
 
 @media only screen and (min-width: 961px) {
@@ -122,5 +275,24 @@
     
     .textinfo-envios li {
         color: $textinfo-envios-li-color;
+    }
+
+    .nosotros-info{
+        
+        p{
+            border: none;
+            text-align: justify;
+        }
+    }
+    .texto-contacto{
+        justify-content: center;
+        p{
+            margin-top: $margin-top-texto-contacto;
+            margin-left: $margin-left-right-texto-contacto;
+            margin-right: $margin-left-right-texto-contacto;
+            text-align: center;
+            border: 2px solid #684e4e;
+            border-radius: $textoinfo-border-radius;
+        }
     }
 }
